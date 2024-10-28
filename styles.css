@@ -1,0 +1,347 @@
+.elenco-cuadro {
+	position: relative;
+    background-color: #f9f9f9;
+    border: 2px solid #333; 
+    padding: 20px; 
+    margin: 20px 0; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); 
+    width: fit-content; 
+    animation: borderpulse 1.5s infinite;
+}
+.elenco-cuadro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4); /* Sombra clara */
+    z-index: -1;
+    animation: smokeEffect 4s infinite;
+}
+
+.elenco-tabla th,.elenco-tabla td{
+    color: #000;
+}
+.elenco-tabla th {
+    background-color: #ccc; /* Fondo gris claro para los encabezados */
+    font-weight: bold;
+}
+
+ 
+@keyframes borderPulse {
+    0% {
+        border-color: #000; /* Color del borde inicial */
+    }
+    50% {
+        border-color: #333; /* Color del borde intermedio, más oscuro */
+    }
+    100% {
+        border-color: #000; /* Regresa al color inicial */
+    }
+}
+
+/* Animación para el efecto de humo */
+@keyframes smokeEffect {
+    0% {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); /* Sombra inicial */
+    }
+    50% {
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.4); /* Sombra más difusa */
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); /* Regresa a la sombra inicial */
+    }
+}
+ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    margin: 0; /* Quita el margen predeterminado */
+    padding: 0; /* Quita el relleno predeterminado */
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.elenco-tabla {
+    border-collapse: collapse; /* Colapsa los bordes de la tabla */
+    width: 100%; /* Ajusta la tabla al ancho del contenedor */
+}
+
+.elenco-tabla th, .elenco-tabla td {
+    border: 1px solid #000; /* Borde de 1px negro para celdas */
+    padding: 10px; /* Espacio interno de las celdas */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.elenco-tabla th {
+    background-color: #f4f4f4; 
+}
+
+.elenco-tabla tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo gris claro alterno para filas pares */
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.formulario {
+    flex: 1;
+    max-width: 300px;
+}
+
+.formulario h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+}
+
+.elenco-cuadro {
+    flex: 2;
+}
+
+.nav-list {
+    list-style-type: none; /* Elimina los puntos de las listas */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+    display: flex; /* Coloca los elementos en línea horizontal */
+    justify-content: flex-start; /* Alinea los elementos a la izquierda (puedes usar center o space-around si quieres otro comportamiento) */
+}
+
+.nav-list li {
+    margin-right: 20px; /* Añade un espacio entre los elementos de la lista */
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.nav-list li a:hover {
+    background-color: #555;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3); /* Sombra al pasar el mouse */
+}
+.nav-list li a:focus {
+    outline: none;
+}
+
+
+
+
+.nav-list ul.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    padding: 10px;
+    list-style: none;
+    margin-top: 0;
+    color: #fff;
+}
+
+
+.nav-list li:hover ul.dropdown {
+    display: block;
+    content-block: 2px ;
+    font-size: 10 px;
+    color: #fff;
+}
+
+/* Estilo de los enlaces dentro del submenú */
+.nav-list ul.dropdown li {
+    padding: 5px 0;
+}
+
+.nav-list ul.dropdown li a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* Añade espacio entre los elementos del menú principal */
+.nav-list li {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+
+/* Estilo del enlace principal */
+.nav-list li a {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #000;
+    padding: 3px;
+}
+
+header {
+    background-color: #000;
+    padding: 20px; 
+}
+body{
+    background:linear-gradient(135deg,#1a1a1a, #000000);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font font-family: Arial,sans-serif;
+    background-image: url('FONDO OSCURO.png');
+    background-size: cover;
+}
+
+header {
+    background-image: url('TEXTURA OSCURA.png');
+    background-size: cover; /* Ajusta el tamaño para que cubra todo el header */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* No repite la imagen */
+    padding: 20px;
+}
+
+.episodios{
+    background-color: #000;
+    color: #fff;
+}
+#episodios{
+    background-color: #000;
+}
+<style>
+    .video-container {
+        display: flex;
+        justify-content: center; 
+        margin: 20px 0; 
+    }
+</style>
+
+
+ .capitulo {
+            background-color: #222;  /* Fondo gris oscuro para cada cuadro */
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 1px solid #444;  /* Borde gris más claro */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);  /* Sombra para darle profundidad */
+            display: flex;
+            align-items: center;  /* Alineación vertical centrada */
+        }
+
+        /* Estilo para las imágenes */
+        .capitulo img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;  /* Separación entre la imagen y el texto */
+            border: 2px solid #555;  /* Borde alrededor de las imágenes */
+        }
+
+        /* Títulos de cada capítulo */
+        .capitulo h3 {
+            margin-top: 0;
+            color: #fff;
+        }
+         .capitulo p {
+            color: #ccc;  /* Texto en color gris claro */
+        }
+        header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    list-style: none;
+}
+
+
+
+/* Estilos del menú hamburguesa */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+}
+
+.hamburger-menu span {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    
+    .hamburger-menu {
+        display: flex;
+    }
+
+    

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Pablo Escobar El Patron Del Mal</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <div class="hamburger-menu" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#Home">Inicio</a></li>
+                <li>
+                    <a href="#Seasons">Temporadas</a>
+                    <!-- Submenú de temporadas -->
+                    <ul class="dropdown">
+                        <li><a href="#Season1">Unica Temporada</a></li>
+                        <!-- Puedes agregar más temporadas aquí -->
+                    </ul>
+                </li>
+                <li>
+    <a href="#Episodes">Episodios</a>
+    <!-- Submenú de episodios -->
+    <ul class="dropdown">
+        <li><a href="episodios.html#Episodes1-10">Episodios 1-10</a></li>
+        <li><a href="episodios.html#Episodes11-20">Episodios 11-20</a></li>
+        <li><a href="episodios.html#Episodes21-30">Episodios 21-30</a></li>
+        <li><a href="episodios.html#Episodes31-40">Episodios 31-40</a></li>
+        <li><a href="episodios.html#Episodes41-50">Episodios 41-50</a></li>
+        <li><a href="episodios.html#Episodes51-60">Episodios 51-60</a></li>
+        <li><a href="episodios.html#Episodes61-74">Episodios (Finales) 61-74</a></li>
+    </ul>
+</li>
+                <li><a href="personajes.html#Characters">Personajes</a></li>
+               <li><a href="Galeria.html/galeria.html#Galeria">Galeria</a></li>
+                <li><a href="https://www.netflix.com/ar/title/80035684" target="_blank">VER</a></li> 
+            </ul>
+
+        </nav>
+    </header>
+
+    <h1>Pablo Escobar El Patron Del Mal</h1>
+    <img src="imagenes/Pablo Main.jpg" alt="Pablo Escobar">
+    <h2>Serie Basada en la vida del narco Colombiano Pablo Escobar</h2>
+    <p>La serie nos relata a lo largo de 72 capítulos la vida de Pablo Escobar, desde sus comienzos un Niño luego como un bandido hasta convertirse en el narcotraficante más poderoso del mundo.</p>
+    <h2>ADELANTO DE LA SERIE</h2>
+<div class="video-container">
+    <video id="miVideo" width="1100" >
+        <source src="VIDEO PARA PAGINA PABLO.mp4" type="video/mp4">
+    </video>
+</div>
+
+<style>
+    .video-container {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        margin: 20px 0; /* Espaciado vertical */
+    }
+</style>
+<script>
+    const video = document.getElementById('miVideo');
+
+    // Función para verificar si el video está en la vista
+    function checkVideoInView() {
+        const rect = video.getBoundingClientRect();
+        const inView = (rect.top >= 0 && rect.bottom <= window.innerHeight);
+            
+        if (inView) {
+            video.play(); // Reproduce el video si está en la vista
+        } else {
+            video.pause(); // Pausa el video si no está en la vista
+        }
+    }
+
+    // Escucha el evento de desplazamiento
+    window.addEventListener('scroll', checkVideoInView);
+    // También verifica cuando se carga la página
+    window.addEventListener('load', checkVideoInView);
+</script>
+<div class="container">
+    <div class="formulario">
+        <h3>Deja tu comentario</h3>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <h2>ELENCO DE LA SERIE</h2>
+    <div class="elenco-cuadro">
+    <table class="elenco-tabla">
+    <thead>
+            <tr>
+                <th>Personaje</th>
+                <th>Actor/Actriz</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>PABLO ESCOBAR</td>
+                <td>ANDRES PARRA</td>
+            </tr>
+            <tr>
+                <td>GONZALO GAVIRIA</td>
+                <td>CHRISTIAN TAPIAN</td>
+            </tr>
+            <tr>
+                <td>PELUCHE</td>
+                <td>RODOLFO SILVA</td>
+            </tr>
+            <tr>
+                <td>PATY (JOVEN)</td>
+                <td>EILEEN MORENO</td>
+            </tr>
+            <tr>
+                <td>REGINA PAREJO</td>
+                <td>ANGIE CEPEDA</td>
+            </tr>
+            <tr>
+                <td>EL ALGUACIL</td>
+                <td>CESAR MORA</td>
+                
+            </tr>
+            <tr>
+                <td>DOÑA ENELIA (MADRE DE ESCOBAR)</td>
+                <td>VICKY HERNÁNDEZ</td>
+            </tr>
+            <tr>
+                <td>PATY (ADULTA)</td>
+                <td>PATY (ADULTA)</td>
+            </tr>
+            <tr>
+                <td>RODRIGO LARA BONILLA</td>
+                <td>ERNESTO BENJUMEA</td>
+            </tr>
+            <tr>
+                <td>LUIS CARLOS GALÁN SARMIENTO</td>
+                <td>NICOLAS MONTERO</td>
+           
+            </tr>
+            <tr>
+                  <td>GUILLERMO CANO</td>
+                <td>GERMAN QUINTERO</td>
+            </tr>
+            <tr>
+                <td>MARIO HENAO</td>
+                <td>TOMMY VAZQUEZ</td>
+            </tr>
+            <tr>
+                <td>DANIELA ESCOBAR</td>
+                <td>SARA PINZÓN</td>
+            </tr>
+            <tr>
+                <td>EMILIO ESCOBAR</td>
+                <td>JOHN MIRQUE</td>
+            <tr>
+                 <td>EL MARIACHI</td>
+                <td>JUAN CARLOS ARANGO</td>
+            </tr>
+            <tr>
+                <td>MARCOS HERBER</td>
+                <td>ALEJANDRO MARTÍNEZ</td>
+            </tr>
+            <tr>
+                  <td>JULIO MOTOA</td>
+                <td>ALDEMAR CORREA</td>
+            </tr>
+            <tr>
+                 <td>GERMAN MOTOA</td>
+                <td>ALEJANDRO GUTIÉRREZ</td>
+            </tr>
+            <tr>
+                 <td>PEDRO MOTOA</td>
+                <td>JOAVANY ÁLVAREZ</td>
+            </tr>
+            <tr>
+                <td>GRACIELA ROJAS</td>
+                <td>LUCES VELÁSQUEZ</td>
+            </tr>
+            <tr>
+                <td>EL CHILI</td>
+                <td>ANDERSON BALLESTEROS</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
