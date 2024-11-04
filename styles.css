@@ -17,7 +17,7 @@
     width: 100%;
     height: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4); /* Sombra clara */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.4); 
     z-index: -1;
     animation: smokeEffect 4s infinite;
 }
@@ -26,7 +26,7 @@
     color: #000;
 }
 .elenco-tabla th {
-    background-color: #ccc; /* Fondo gris claro para los encabezados */
+    background-color: #ccc; 
     font-weight: bold;
 }
 
@@ -56,14 +56,14 @@
     }
 }
 ul {
-    list-style-type: none; /* Quita los puntos de la lista */
-    margin: 0; /* Quita el margen predeterminado */
-    padding: 0; /* Quita el relleno predeterminado */
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
 }
 
 li {
     font-size: 16px;
-    margin-bottom: 10px; /* Espacio entre los elementos de la lista */
+    margin-bottom: 10px; 
 }
 
 body {
@@ -73,13 +73,13 @@ body {
 
 .elenco-tabla {
     border-collapse: collapse; /* Colapsa los bordes de la tabla */
-    width: 100%; /* Ajusta la tabla al ancho del contenedor */
+    width: 100%; 
 }
 
 .elenco-tabla th, .elenco-tabla td {
-    border: 1px solid #000; /* Borde de 1px negro para celdas */
-    padding: 10px; /* Espacio interno de las celdas */
-    text-align: left; /* Alinea el texto a la izquierda */
+    border: 1px solid #000; 
+    padding: 10px; 
+    text-align: left; 
 }
 
 .elenco-tabla th {
@@ -87,7 +87,7 @@ body {
 }
 
 .elenco-tabla tr:nth-child(even) {
-    background-color: #f9f9f9; /* Fondo gris claro alterno para filas pares */
+    background-color: #f9f9f9; 
 }
 
 .container {
@@ -141,10 +141,10 @@ body {
 
 .nav-list {
     list-style-type: none; /* Elimina los puntos de las listas */
-    padding: 0; /* Elimina el padding por defecto */
-    margin: 0; /* Elimina el margen por defecto */
-    display: flex; /* Coloca los elementos en línea horizontal */
-    justify-content: flex-start; /* Alinea los elementos a la izquierda (puedes usar center o space-around si quieres otro comportamiento) */
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: flex-start; /* Alinea los elementos a la izquierda  */
 }
 
 .nav-list li {
@@ -231,7 +231,7 @@ body{
 header {
     background-image: url('TEXTURA OSCURA.png');
     background-size: cover; /* Ajusta el tamaño para que cubra todo el header */
-    background-position: center; /* Centra la imagen */
+    background-position: center; 
     background-repeat: no-repeat; /* No repite la imagen */
     padding: 20px;
 }
@@ -253,14 +253,14 @@ header {
 
 
  .capitulo {
-            background-color: #222;  /* Fondo gris oscuro para cada cuadro */
+            background-color: #222; 
             padding: 20px;
             margin: 20px 0;
             border-radius: 10px;
-            border: 1px solid #444;  /* Borde gris más claro */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);  /* Sombra para darle profundidad */
+            border: 1px solid #444;  
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);  
             display: flex;
-            align-items: center;  /* Alineación vertical centrada */
+            align-items: center;  
         }
 
         /* Estilo para las imágenes */
@@ -278,7 +278,7 @@ header {
             color: #fff;
         }
          .capitulo p {
-            color: #ccc;  /* Texto en color gris claro */
+            color: #ccc;  
         }
         header {
     position: fixed;
@@ -346,16 +346,16 @@ header {
 
     //responsive
 
-    /* General: Reduce el margen y padding en dispositivos pequeños */
+  
 body {
     margin: 0;
     padding: 0;
-    font-size: 14px; /* Tamaño de texto ligeramente menor para móviles */
+    font-size: 14px; 
 }
 
-/* Estructura principal en móviles */
+/
 @media (max-width: 768px) {
-    /* Ajusta los márgenes y espaciados generales */
+  
     .elenco-cuadro, .capitulo, .container {
         margin: 10px;
         padding: 15px;
@@ -378,7 +378,7 @@ body {
         padding: 10px;
     }
 
-    /* Flexbox para contenedores */
+    
     .container {
         flex-direction: column;
         gap: 15px;
@@ -395,7 +395,7 @@ body {
     }
 }
 
-/* Menú hamburguesa */
+
 .hamburger-menu {
     display: flex;
 }
@@ -434,4 +434,380 @@ li, p {
     margin: 10px;
     padding: 10px;
 }
+.video-container video {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Estilos para la imagen principal */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Contenedor general */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* Estilos del encabezado y menú */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+header h1 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Menú hamburguesa */
+.hamburger-menu {
+    cursor: pointer;
+    display: none; 
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Dropdown */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    padding: 10px;
+}
+
+.nav-list li:hover .dropdown {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    
+    .hamburger-menu {
+        display: flex;
+    }
+
+    
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+
+    .nav-list.active {
+        display: flex;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .nav-list li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .dropdown {
+        position: static;
+        background-color: #444;
+        padding: 0;
+    }
+}
+
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Formulario de comentarios */
+.formulario {
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.formulario input, .formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ddd;
+}
+
+.formulario button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: #555;
+}
+
+
+.elenco-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.elenco-tabla th, .elenco-tabla td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.elenco-tabla th {
+    background-color: #333;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    .elenco-tabla, .elenco-tabla th, .elenco-tabla td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}
+
+.nav-list li:hover .dropdown {
+    display: block;
+    position: static; 
+    width: 100%; 
+}
+
+.dropdown {
+    display: none;
+    background-color: #222; 
+    padding: 10px;
+}
+
+.dropdown li {
+    padding: 10px 0;
+}
+
+.dropdown li a {
+    color: #fff;
+    padding: 5px 10px;
+}
+@media (max-width: 768px) {
+    .nav-list.active {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9); 
+        padding: 10px;
+        width: 100%; 
+    }
+
+    .nav-list li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .dropdown {
+        position: static; 
+        width: 100%; 
+}
+.nav-list ul.dropdown {
+    background-color: #333; 
+    color: #fff; 
+}
+
+.nav-list ul.dropdown li a {
+    color: #fff; 
+}
+
+@media (max-width: 768px) {
+    .nav-list ul.dropdown li {
+        font-size: 14px; 
+        padding: 8px 0; 
+    }
+
+    .nav-list ul.dropdown li a {
+        padding: 8px 10px; 
+    }
+}
+.contenedor-episodios {
+    z-index: 1; 
+}
+.menu-episodios {
+    background-color: rgba(0, 0, 0, 0.8); 
+}
+.menu-episodios {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+.submenu {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    opacity: 0.9; 
+    overflow-y: auto; 
+    max-height: 90vh; 
+    z-index: 1000; 
+}
+
+.submenu:hover {
+    opacity: 1;
+    overflow-y: scroll; 
+}
+
+.episode-content {
+    margin-left: 200px; 
+    padding: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+
+.hamburger-menu {
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+
+#navMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    text-align: center;
+    overflow-y: auto;
+    display: none; 
+}
+
+#navMenu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    padding: 15px 0;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#navMenu.show {
+    display: block;
+}
+
+
+.personajes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.personaje {
+    width: 250px;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.personaje img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+@media (min-width: 769px) {
+    #navMenu {
+        display: block; 
+        height: auto;
+        position: static;
+        background-color: transparent;
+        overflow: visible;
+    }
+
+    .hamburger-menu {
+        display: none; 
+    }
+}
+
 

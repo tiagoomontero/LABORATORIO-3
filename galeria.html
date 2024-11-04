@@ -7,6 +7,70 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .nav-list li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+        .nav-list li a:hover {
+            color: #ccc;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery figure {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery figure:hover {
+            transform: scale(1.05);
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        }
+        .gallery figcaption {
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,7 +79,7 @@
             <span></span>
             <span></span>
         </div>
-        <nav>
+        <nav id="navMenu">
             <ul class="nav-list">
                 <li><a href="index.html">Inicio</a></li>
                 <li>
@@ -69,6 +133,54 @@
                     <img src="imagenes/pablomanejando.png" alt="Escobar en su coche">
                 </a>
                 <figcaption>Escobar en su coche clásico</figcaption>
+            </figure>
+            <figure>
+                <a href="imagenes/pablocarcel.png" data-lightbox="galeria" data-title="Escobar en la carcel">
+                    <img src="imagenes/pablocarcel.png" alt="Escobar en la Carcel">
+                </a>
+                <figcaption>Escobar en la Carcel la Catedral</figcaption>
+            </figure>
+            <figure>
+                <a href="imagenes/escobarplanes.png" data-lightbox="galeria" data-title="Escobar  Reorganizacion">
+                    <img src="imagenes/escobarplanes.png" alt="Escobar Reorganizacion">
+                </a>
+                <figcaption>Escobar Planeando la Reorganizacion del Cartel de Medellin</figcaption>
+            </figure>
+            <figure>
+                <a href="imagenes/recompensa.png" data-lightbox="galeria" data-title="Escobar recompensa">
+                    <img src="imagenes/recompensa.png" alt="Escobar recompensa">
+                </a>
+                <figcaption>Escobar Dando una recompensa por cada Policia Asesinado</figcaption>
+            </figure>
+            <figure>
+                <a href="imagenes/familiareal.png" data-lightbox="galeria" data-title="Familia real de escobar">
+                    <img src="imagenes/familiareal.png" alt="Familia Real de Escobar">
+                </a>
+                <figcaption>Familia Real de Escobar</figcaption>
+            </figure>
+            <figure>
+                <a href="imagenes/inicios.png" data-lightbox="galeria" data-title="Escobar en sus inicios">
+                    <img src="imagenes/inicios.png" alt="Escobar en sus inicios">
+                </a>
+                <figcaption>Escobar en sus Inicios Jurando tener un Millon de Dolares en el Bolsillo o pegarse un Tiro</figcaption>
+            </figure>
+            <figure>
+                <a href="imagenes/casablanca.png" data-lightbox="galeria" data-title="Escobar en la casa Blanca">
+                    <img src="imagenes/casablanca.png" alt="Escobar en la casa Blanca">
+                </a>
+                <figcaption>Escobar Tomandose una Foto en la Casa Blanca Siendo el Hombre mas Buscado del Mundo</figcaption>
+            </figure>
+            <figure>
+                <a href="imagenes/mafia.png" data-lightbox="galeria" data-title="Escobar con todo su grupo de mafiosos">
+                    <img src="imagenes/mafia.png" alt="Escobar con todo su grupo">
+                </a>
+                <figcaption>Escobar Tomandose una Foto con todo su grupo de mafiosos</figcaption>
+            </figure>
+            <figure>
+                <a href="imagenes/finalescobar.png" data-lightbox="galeria" data-title="Escobar en su final">
+                    <img src="imagenes/finalescobar.png" alt="Escobar Final">
+                </a>
+                <figcaption>Final y Muerte de Pablo Emilio Escobar Gaviria</figcaption>
             </figure>
         </section>
     </main>

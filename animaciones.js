@@ -15,4 +15,19 @@ document.body.addEventListener('click', function() {
     });
 });
 
+document.querySelectorAll('.menu-episodios a').forEach(link => {
+    link.addEventListener('click', () => {
+        document.querySelector('.menu-episodios').style.display = 'none'; // Oculta el menú
+    });
+});
+// Función para alternar el menú en móvil
+function toggleMenu() {
+    var navMenu = document.getElementById("navMenu");
+    navMenu.classList.toggle("show");
+}
+
+// Función para cerrar el menú al hacer clic en un enlace
+function closeMenu() {
+    document.getElementById("navMenu").classList.remove("show");
+}
 

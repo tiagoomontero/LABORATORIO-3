@@ -1,11 +1,119 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Episodios</title>
-    <link rel="stylesheet" href="styles.css"> 
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .nav-list li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            transition: color 0.3s;
+        }
+
+        .nav-list li a:hover {
+            color: #ccc;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            font-size: 1.8em;
+            color: #e2e2e2;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1em;
+            color: #cccccc;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        .section-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+       
+        #submenu {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            width: 200px;
+            max-height: 90vh;
+            overflow-y: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            display: none; /* Oculto por defecto */
+            z-index: 1000;
+            border-radius: 8px;
+        }
+
+        #toggleSubmenuButton {
+            position: fixed;
+            top: 10px;
+            left: 220px;
+            z-index: 1001;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #toggleSubmenuButton:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
 <body id="episodios">
     <header>
@@ -26,49 +134,107 @@
         </nav>
     </header>
 
+    
+    <button id="toggleSubmenuButton">Mostrar Menú</button>
+
+    
+    <div id="submenu">
+        <ul>
+            <li><a href="#Episodes1-10">Episodios 1-10</a></li>
+            <li><a href="#Episodes11-20">Episodios 11-20</a></li>
+            <li><a href="#Episodes21-30">Episodios 21-30</a></li>
+            <li><a href="#Episodes31-40">Episodios 31-40</a></li>
+            <li><a href="#Episodes41-50">Episodios 41-50</a></li>
+            <li><a href="#Episodes51-60">Episodios 51-60</a></li>
+            <li><a href="#Episodes61-74">Episodios (Finales) 61-74</a></li>
+        </ul>
+    </div>
+
     <main>
         
         <section id="Episodes1-10">
-            <h1>Episodios 1-10</h1>
-            <p>En estos primeros episodios, conocemos la infancia de Pablo Escobar y su primo Gustavo, donde se ven sus primeras incursiones en el mundo del crimen. Desde niños traviesos en el campo hasta jóvenes ambiciosos, comienzan a hacer contactos y a idear su camino en el bajo mundo.</p>
+            <div class="section-content">
+                <h1>Episodios 1-10</h1>
+                <p>En estos primeros episodios, conocemos la infancia de Pablo Escobar y su primo Gustavo, donde se ven sus primeras incursiones en el mundo del crimen.</p>
+                <a href="https://www.netflix.com/ar/title/80035684" target="_blank">
+                    <img src="imagenes/10CAPITULOS.png" alt="Primeros 10 CAPITULOS">
+                </a>
+            </div>
         </section>
 
-       
         <section id="Episodes11-20">
-            <h1>Episodios 11-20</h1>
-            <p>Pablo y Gustavo se adentran en el negocio del contrabando y construyen sus primeras conexiones importantes. En estos episodios, vemos cómo establecen las bases de su futuro imperio mientras enfrentan nuevos retos y enemigos.</p>
+            <div class="section-content">
+                <h2>Episodios 11-20</h2>
+                <p>Pablo y Gustavo se adentran en el negocio del contrabando y construyen sus primeras conexiones importantes.</p>
+                <a href="https://www.netflix.com/ar/title/80035684" target="_blank">
+                    <img src="imagenes/20 CAPITULOS.png" alt="CAPITULOS 11 AL 20">
+                </a>
+            </div>
         </section>
 
-      
         <section id="Episodes21-30">
-            <h1>Episodios 21-30</h1>
-            <p>Pablo se convierte en una figura temida y respetada. Su influencia crece, y los primeros conflictos con las autoridades comienzan a intensificarse. La ambición de Pablo parece no tener límites, y su poder se hace sentir en toda Colombia.</p>
+            <div class="section-content">
+                <h2>Episodios 21-30</h2>
+                <p>Pablo se convierte en una figura temida y respetada. Su influencia crece, y los primeros conflictos con las autoridades comienzan a intensificarse.</p>
+                <a href="https://www.netflix.com/ar/title/80035684" target="_blank">
+                    <img src="imagenes/30CAPITULOS.png" alt="CAPITULOS 21 AL 30">
+                </a>
+            </div>
         </section>
 
-        
         <section id="Episodes31-40">
-            <h1>Episodios 31-40</h1>
-            <p>Estos episodios muestran a Pablo enfrentando la presión de autoridades nacionales e internacionales. Su vida se vuelve más peligrosa, y su red de aliados y enemigos sigue creciendo, poniendo en riesgo su imperio y su familia.</p>
+            <div class="section-content">
+                <h2>Episodios 31-40</h2>
+                <p>Estos episodios muestran a Pablo enfrentando la presión de autoridades nacionales e internacionales.</p>
+                <a href="https://www.netflix.com/ar/title/80035684" target="_blank">
+                    <img src="imagenes/40CAPITULOS.png" alt="CAPITULOS 31 AL 40">
+                </a>
+            </div>
         </section>
 
-        
         <section id="Episodes41-50">
-            <h1>Episodios 41-50</h1>
-            <p>La guerra entre el cartel de Pablo y el gobierno se intensifica. La violencia y los atentados se apoderan de Colombia, y Escobar comienza a perder el control. La historia se adentra en su lado más oscuro y en las consecuencias de sus acciones.</p>
+            <div class="section-content">
+                <h2>Episodios 41-50</h2>
+                <p>La guerra entre el cartel de Pablo y el gobierno se intensifica. La violencia y los atentados se apoderan de Colombia.</p>
+                <a href="https://www.netflix.com/ar/title/80035684" target="_blank">
+                    <img src="imagenes/50CAPITULOS.png" alt="CAPITULOS 41 AL 50">
+                </a>
+            </div>
         </section>
 
-       
         <section id="Episodes51-60">
-            <h1>Episodios 51-60</h1>
-            <p>El cerco sobre Escobar se cierra, y sus aliados empiezan a traicionarlo. La presión lo obliga a tomar decisiones desesperadas, y su poder y control comienzan a desmoronarse. La caída de su imperio parece inevitable.</p>
+            <div class="section-content">
+                <h2>Episodios 51-60</h2>
+                <p>El cerco sobre Escobar se cierra, y sus aliados empiezan a traicionarlo. La caída de su imperio parece inevitable.</p>
+                <a href="https://www.netflix.com/ar/title/80035684" target="_blank">
+                    <img src="imagenes/60CAPITULOS.png" alt="CAPITULOS 51 AL 60">
+                </a>
+            </div>
         </section>
 
         <section id="Episodes61-74">
-            <h1>Episodios (Finales) 61-74</h1>
-            <p>Los últimos episodios muestran la caída final de Pablo Escobar. Atrapado y con sus recursos limitados, enfrenta su destino en una serie de eventos dramáticos que concluyen su historia y dejan una marca en la historia de Colombia.</p>
+            <div class="section-content">
+                <h2>Episodios (Finales) 61-74</h2>
+                <p>Los episodios finales muestran el declive de Escobar, su aislamiento y finalmente su caída definitiva.</p>
+                <a href="https://www.netflix.com/ar/title/80035684" target="_blank">
+                    <img src="imagenes/70CAPITULOS.png" alt="CAPITULOS 61 AL 74">
+                </a>
+            </div>
         </section>
     </main>
 
-   
+    <script>
+       
+        document.getElementById('toggleSubmenuButton').addEventListener('click', function() {
+            var submenu = document.getElementById('submenu');
+            if (submenu.style.display === 'none' || submenu.style.display === '') {
+                submenu.style.display = 'block';
+                this.textContent = 'Ocultar Menú';
+            } else {
+                submenu.style.display = 'none';
+                this.textContent = 'Mostrar Menú';
+            }
+        });
+    </script>
 </body>
 </html>
