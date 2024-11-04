@@ -1,5 +1,5 @@
 .elenco-cuadro {
-	position: relative;
+    position: relative;
     background-color: #f9f9f9;
     border: 2px solid #333; 
     padding: 20px; 
@@ -344,4 +344,94 @@ header {
         display: flex;
     }
 
-    
+    //responsive
+
+    /* General: Reduce el margen y padding en dispositivos pequeños */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px; /* Tamaño de texto ligeramente menor para móviles */
+}
+
+/* Estructura principal en móviles */
+@media (max-width: 768px) {
+    /* Ajusta los márgenes y espaciados generales */
+    .elenco-cuadro, .capitulo, .container {
+        margin: 10px;
+        padding: 15px;
+        width: auto;
+    }
+
+    /* Optimiza la tabla */
+    .elenco-tabla {
+        font-size: 14px;
+        width: 100%; /* Ajusta la tabla al ancho del contenedor */
+        overflow-x: auto; /* Añade desplazamiento horizontal para evitar desbordamiento */
+    }
+    .elenco-tabla th, .elenco-tabla td {
+        padding: 8px;
+    }
+
+    /* Formulario */
+    .formulario {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    /* Flexbox para contenedores */
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Menú de navegación en móviles */
+    .nav-list {
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-list li {
+        margin: 5px 0;
+    }
+}
+
+/* Menú hamburguesa */
+.hamburger-menu {
+    display: flex;
+}
+.nav-list.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.capitulo img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+/* Asegura que el video se adapte a la pantalla */
+.video-container iframe {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+li, p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.elenco-cuadro, .capitulo {
+    font-size: 14px;
+    margin: 10px;
+    padding: 10px;
+}
+

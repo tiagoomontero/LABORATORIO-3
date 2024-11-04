@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Galería - Escobar, El Patrón del Mal</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </head>
 <body>
     <header>
@@ -45,20 +47,30 @@
         <h1>Galería de la serie Escobar, El Patrón del Mal</h1>
         <section class="gallery">
             <figure>
-                <img src="imagenes/hacienda.jpg" alt="Escena de Escobar, El Patrón del Mal">
+                <a href="imagenes/hacienda.jpg" data-lightbox="galeria" data-title="Escobar en su hacienda">
+                    <img src="imagenes/hacienda.jpg" alt="Escena de Escobar, El Patrón del Mal">
+                </a>
                 <figcaption>Escobar en su hacienda</figcaption>
             </figure>
             <figure>
-                <img src="imagenes/elencoo.png" alt="Elenco de la serie">
+                <a href="imagenes/elencoo.png" data-lightbox="galeria" data-title="Elenco principal de la serie">
+                    <img src="imagenes/elencoo.png" alt="Elenco de la serie">
+                </a>
                 <figcaption>Elenco principal de la serie</figcaption>
             </figure>
             <figure>
-                <img src="imagenes/planes.png" alt="Escena de acción de la serie">
+                <a href="imagenes/planes.png" data-lightbox="galeria" data-title="Escena de acción">
+                    <img src="imagenes/planes.png" alt="Escena de acción de la serie">
+                </a>
                 <figcaption>Escena de acción</figcaption>
             </figure>
             <figure>
-                <img src="imagenes/pablomanejando.png" alt="Escobar en su coche">
+                <a href="imagenes/pablomanejando.png" data-lightbox="galeria" data-title="Escobar en su coche clásico">
+                    <img src="imagenes/pablomanejando.png" alt="Escobar en su coche">
+                </a>
                 <figcaption>Escobar en su coche clásico</figcaption>
             </figure>
         </section>
     </main>
+</body>
+</html>
