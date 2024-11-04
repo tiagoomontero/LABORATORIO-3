@@ -224,12 +224,12 @@ body{
     margin: 0;
     padding: 0;
     font font-family: Arial,sans-serif;
-    background-image: url('FONDO OSCURO.png');
+    background-image: url('imagenes/FONDO OSCURO.png');
     background-size: cover;
 }
 
 header {
-    background-image: url('TEXTURA OSCURA.png');
+    background-image: url('imagenes/TEXTURA OSCURA.png');
     background-size: cover; /* Ajusta el tamaño para que cubra todo el header */
     background-position: center; 
     background-repeat: no-repeat; /* No repite la imagen */
