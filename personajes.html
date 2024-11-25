@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personajes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .nav-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        .nav-list li {
+            margin: 0 10px;
+        }
+        .nav-list li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        .nav-list li a:hover {
+            color: #ccc;
+        }
+        .hamburger-menu {
+            display: none;
+        }
+        .hamburger-menu span {
+            background: #fff;
+            display: block;
+            height: 4px;
+            width: 25px;
+            margin: 4px 0;
+        }
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+                flex-direction: column;
+            }
+            .nav-list.active {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+                flex-direction: column;
+                cursor: pointer;
+            }
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #e2e2e2;
+        }
+        .personajes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .personaje {
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .personaje:hover {
+            transform: scale(1.05);
+        }
+        .personaje img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        }
+        .personaje h3 {
+            font-size: 1.2em;
+            color: #f3f3f3;
+            margin: 15px 0 10px;
+        }
+        .personaje p {
+            font-size: 0.9em;
+            color: #ccc;
+            line-height: 1.5;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Menú hamburguesa -->
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!-- Menú principal -->
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="temporada.html">Mejores Momentos</a></li>
+                <li><a href="episodios.html">Episodios</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="https://www.netflix.com" target="_blank">Ver</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Personajes de la Serie Pablo Escobar, El Patrón del Mal</h1>
+        <h2>Personajes Principales de la Serie</h2>
+
+        <div class="personajes">
+            <div class="personaje">
+                <img src="imagenes/pabloypablo.png" alt="Pablo Escobar">
+                <h3>Pablo Escobar</h3>
+                <p>El protagonista de la serie y líder del cartel de Medellín. Pablo es conocido por su carisma y su crueldad. A lo largo de la serie, se muestra su ascenso en el mundo del narcotráfico y cómo llegó a convertirse en el hombre más temido de Colombia.</p>
+            </div>
+            <div class="personaje">
+                <img src="imagenes/gonzalogaviria.png" alt="Gonzalo Gaviria">
+                <h3>Gonzalo Gaviria</h3>
+                <p>Primo de Pablo Escobar y uno de sus aliados más cercanos. Gonzalo es quien ayuda a Pablo en sus primeros pasos en el negocio del contrabando, y su lealtad hacia el cartel es inquebrantable.</p>
+            </div>
+            <div class="personaje">
+                <img src="imagenes/elpeluche.png" alt="El Peluche">
+                <h3>El Peluche</h3>
+                <p>Uno de los sicarios de confianza de Pablo Escobar. "El Peluche" es un personaje leal y violento, siempre dispuesto a ejecutar las órdenes de Escobar sin cuestionarlas.</p>
+            </div>
+            <div class="personaje">
+                <img src="imagenes/elmariachi.png" alt="El Mariachi">
+                <h3>El Mariachi</h3>
+                <p>Otro de los sicarios de Escobar. "El Mariachi" es conocido por su brutalidad y por su lealtad inquebrantable a Pablo, haciendo todo lo necesario para proteger el imperio del narcotráfico.</p>
+            </div>
+            <div class="personaje">
+                <img src="imagenes/motoa.png" alt="Hermanos Motoa">
+                <h3>Hermanos Motoa</h3>
+                <p>Miembros importantes del cartel de Medellín. Los hermanos Motoa son fundamentales en la logística del cartel y en la expansión de sus operaciones internacionales.</p>
+            </div>
+            <div class="personaje">
+                <img src="imagenes/marcos.png" alt="Marcos Herber">
+                <h3>Marcos Herber</h3>
+                <p>Marcos es uno de los contactos y aliados de Escobar en el cartel, encargado de coordinar operaciones clave en el negocio de la droga.</p>
+            </div>
+            <div class="personaje">
+                <img src="imagenes/cali.png" alt="El cartel de Cali">
+                <h3>El Cartel de Cali</h3>
+                <p>Rivales del cartel de Medellín. El cartel de Cali se presenta como una organización bien estructurada que busca acabar con la supremacía de Escobar en el narcotráfico colombiano.</p>
+            </div>
+            <div class="personaje">
+                <img src="imagenes/mujerpablo.png" alt="Esposa de Pablo Escobar">
+                <h3>Victoria Eugenia Henao</h3>
+                <p>Esposa de Pablo Escobar. A lo largo de la serie, Victoria apoya a Pablo, aunque su relación se vuelve tensa por las actividades peligrosas de su esposo.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pablo Escobar El Patrón del Mal. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menu = document.querySelector('.nav-list');
+            const hamburger = document.querySelector('.hamburger-menu');
+
+            hamburger.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
