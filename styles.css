@@ -809,5 +809,575 @@ header {
         display: none; 
     }
 }
+body {
+    margin: 20px; /* Agrega un margen de 20px alrededor de toda la página */
+    padding: 0; /* Opcional, asegura que no haya relleno adicional */
+    box-sizing: border-box; /* Hace que el tamaño total del cuerpo incluya márgenes y bordes */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px; /* Espacio entre el borde del navegador y el contenido */
+    padding: 0;
+    font-family: Arial, sans-serif; /* Para mejorar la tipografía */
+}
+/* Añade una clase para ocultar el cuadro de episodios */
+.menu-episodios.hidden {
+    display: none; /* Oculta el cuadro flotante */
+}
+
+/* Ajustes generales para asegurarte de que se aplique el responsive */
+.menu-episodios {
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+#navMenu.show {
+    display: flex; /* Cambia de block a flex para un mejor alineamiento */
+    flex-direction: column; /* Asegura que los items estén en columna */
+}
+
+/* Evita que el cuadro interrumpa en tamaños pequeños */
+@media (max-width: 768px) {
+    .menu-episodios {
+        position: absolute;
+        top: 50px; /* Ajusta el espacio según tu diseño */
+        left: 0;
+        width: 100%;
+        height: auto;
+        z-index: 2000;
+    }
+}
+.menu-episodios {
+    display: block; /* Asegúrate de que esté visible inicialmente */
+}
+
+.menu-episodios.hidden {
+    display: none; /* Ocúltalo al agregar la clase 'hidden' */
+}
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #ccc;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-size: 1.8em;
+    color: #e2e2e2;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1em;
+    color: #cccccc;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Ocultar el menú con la clase */
+#menuNavegacion.hidden {
+    display: none;
+}
+
+/* Estilos para el botón hamburguesa */
+.hamburger-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: none; /* Solo visible en pantallas pequeñas */
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+    }
+
+    #menuNavegacion {
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #ccc;
+}
+
+/* Menú hamburguesa (para dispositivos pequeños) */
+.hamburger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Sección de imágenes, videos y tablas responsivas */
+img, video, table {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Para dispositivos pequeños (máximo 480px) */
+@media (max-width: 480px) {
+    .nav-list {
+        display: none; /* Oculta la barra de navegación */
+        flex-direction: column;
+        gap: 10px;
+        background-color: #333;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav-list.open {
+        display: flex; /* Muestra la barra de navegación al abrir el menú */
+    }
+
+    .hamburger-menu {
+        display: block; /* Muestra el botón hamburguesa */
+    }
+
+    img, video, table {
+        max-width: 480px; /* Máximo ancho */
+        max-height: 576px; /* Máximo alto */
+    }
+}
+/* Cuadro del elenco (estilo general) */
+#elenco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro con transparencia */
+    color: #fff;
+    border-radius: 10px;
+    margin: 20px auto; /* Centrado automático */
+    max-width: 100%; /* Que no exceda el ancho del contenedor */
+}
+
+/* Ajustes para el encabezado del elenco */
+#elenco h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Lista del elenco */
+#elenco ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Toma todo el ancho del contenedor */
+    text-align: center;
+}
+
+#elenco ul li {
+    margin: 5px 0; /* Espaciado entre elementos */
+    font-size: 16px;
+}
+
+/* Formulario */
+#comentarios {
+    margin-top: 20px;
+    width: 100%; /* Que tome todo el espacio disponible */
+}
+
+#comentarios input, 
+#comentarios textarea {
+    width: calc(100% - 20px); /* Ajuste automático del tamaño */
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    display: block; /* Que ocupe toda la línea */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 480px) {
+    #elenco {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    #elenco h2 {
+        font-size: 18px;
+    }
+
+    #elenco ul li {
+        font-size: 14px;
+    }
+
+    #comentarios input, 
+    #comentarios textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Menú hamburguesa */
+.hamburger-menu {
+    display: none; /* Ocultar el menú hamburguesa en pantallas grandes */
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+.nav-list.active {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 10;
+}
+
+.nav-list li {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Video Responsivo */
+.video-container video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tabla del Elenco */
+.elenco-tabla {
+    width: 100%; /* Ajustar al ancho del contenedor */
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.elenco-tabla th, .elenco-tabla td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.elenco-tabla th {
+    background-color: #333;
+    color: white;
+}
+
+.elenco-cuadro {
+    overflow-x: auto; /* Hacer que la tabla sea desplazable horizontalmente */
+}
+
+/* Formulario */
+form {
+    max-width: 100%;
+}
+
+form input, form textarea, form button {
+    width: calc(100% - 20px); /* Ajustar al contenedor */
+    margin: 10px auto;
+    padding: 10px;
+    display: block;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hamburger-menu {
+        display: flex; /* Mostrar menú hamburguesa */
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .elenco-tabla th, .elenco-tabla td {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .elenco-tabla th, .elenco-tabla td {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .formulario {
+        padding: 10px;
+    }
+
+    form input, form textarea, form button {
+        font-size: 12px;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
 
 
+
+
+
+
+
+/* General */
+.elenco-cuadro {
+    margin: 20px auto;
+    overflow-x: auto; /* Permite desplazamiento horizontal en pantallas pequeñas */
+    border: 1px solid #444;
+    padding: 10px;
+    background-color: #111;
+    border-radius: 10px;
+}
+
+.elenco-tabla {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.elenco-tabla th,
+.elenco-tabla td {
+    padding: 10px;
+    border: 1px solid #444;
+    color: white;
+}
+
+.elenco-tabla th {
+    background-color: #222;
+}
+
+.elenco-tabla td {
+    background-color: #333;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .elenco-cuadro {
+        padding: 5px;
+    }
+
+    .elenco-tabla th,
+    .elenco-tabla td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+img {
+    display: block; /* Centra la imagen automáticamente si es el único elemento en su línea */
+    margin: 20px auto; /* Espacio superior/inferior y centrado horizontal */
+    max-width: 90%; /* Evita que la imagen sea más grande que la pantalla */
+    height: auto; /* Mantiene las proporciones */
+    border-radius: 10px; /* Opcional: añade bordes redondeados */
+}
+
+
+
+
+
+
+
+
+
+
+/* Menú hamburguesa */
+.hamburger-menu {
+    display: none; /* Escondido por defecto (lo mostramos en pantallas pequeñas) */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* Estilo del menú */
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+
+.nav-list.active {
+    display: block; /* Para dispositivos pequeños */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    z-index: 100;
+}
+
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex; /* Mostramos el menú hamburguesa */
+    }
+    .nav-list {
+        display: none; /* Escondemos la lista por defecto */
+        flex-direction: colu
